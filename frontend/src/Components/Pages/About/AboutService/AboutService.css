@@ -1,0 +1,209 @@
+.mission,
+.value,
+.vission {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mission1,
+.mission2,
+.vission1,
+.vission2,
+.value1,
+.value2 {
+  width: 50%;
+  padding: 40px 20px;
+}
+
+.mission1,
+.vission1,
+.value1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-right: 1px dashed #16224a;
+}
+
+.heading-divider {
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  border: 3px solid #ed2024;
+  width: 90px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.heading-divider:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 7px;
+  width: 15px;
+  border-radius: 50px;
+  background: #ed2024;
+  -webkit-animation: heading-move 5s infinite linear;
+  animation: heading-move 5s infinite linear;
+}
+@keyframes heading-move {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  50% {
+    transform: translateX(70px); /* Moves 100px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Returns to the start position */
+  }
+}
+
+.vission1 {
+  border-right: none;
+}
+
+.vission2 {
+  border-right: 1px dashed #16224a;
+}
+
+.vission1-content {
+  max-width: 30%;
+  text-align: center;
+  width: 86px;
+  height: 86px;
+  border-width: 0px 0px 2px 0px;
+  border-color: #ed2024;
+}
+.vission2-content {
+  width: 70%;
+}
+.mission2 {
+  text-align: center;
+  position: relative;
+}
+.dot {
+  position: absolute;
+  top: 183px;
+  left: -7px;
+  z-index: 4;
+}
+
+.dots {
+  position: absolute;
+  top: 183px;
+  right: -7px;
+  z-index: 4;
+}
+
+.vission1-content > h3 {
+  color: #ffff;
+   font-family: "Outfit", sans-serif;
+  line-height: 1.1em;
+  font-weight: 400;
+  font-size: 49px;
+  background-color: #16224a;
+  border-radius: 15px;
+  margin: 0px;
+  border-bottom: 3px solid #ed2024;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-color: #ed2024;
+  box-shadow: 5px 5px 87px 0px rgba(186, 223.99999999999997, 246, 0.5);
+}
+
+.vission2-content > h5 {
+  color: #16224a;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  line-height: 1.1em;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.mission2 > img {
+  border-radius: 30px;
+  box-shadow: 5px 5px 87px 0px rgba(186, 223.99999999999997, 246, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .dot,
+  .dots {
+    display: none;
+  }
+
+  .vission2 {
+    border-right: none;
+  }
+
+  .mission1,
+  .vission1,
+  .value1 {
+    border-right: none;
+  }
+
+  .mission1,
+  .vission1,
+  .value1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission,
+  .value,
+  .vission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission1,
+  .mission2,
+  .vission1,
+  .vission2,
+  .value1,
+  .value2 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .vission {
+    flex-direction: column-reverse;
+  }
+
+  .mission2 > img {
+    width: 300px;
+    box-shadow: 5px 5px 87px 0px rgba(186, 223.99999999999997, 246, 0.5);
+  }
+
+  .vission2-content {
+    width: 100%;
+  }
+
+  .buili {
+    display: none;
+  }
+}
+
+
+.image-s{
+  width: 80%;
+}
+
+.kkk >li{
+  width: 100%;
+}
+
+.kkk >li:first-child{
+  margin-top: 10px;
+}
+
+.below-border{
+  margin: 0 7px;
+    background: linear-gradient(180deg, #f0652b00 73.3%, #ed2024 74.1%);
+}
+
+.point-bold{
+  font-weight: bolder;
+}

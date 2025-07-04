@@ -1,0 +1,184 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+.service-image {
+  position: relative;
+}
+
+.service-image img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+
+}
+.service-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* ✅ Dark overlay layer */
+  z-index: 1;
+}
+
+.service-cont-slik-slider {
+  z-index: 10;
+}
+
+/* .slick-list {
+  height: 600px;
+  overflow-y: visible;
+} */
+
+.slick-track {
+  display: flex !important; /* Ensure slides align properly */
+  gap: 15px; /* Use this if supported, otherwise rely on margin */
+}
+
+.service-title {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+}
+
+.service-title p {
+  font-size: clamp(0.8rem, 4.9vw, 1rem);
+  text-align: center;
+font-family: "Inter", Sans-serif;
+  letter-spacing: 1px;
+  color: #ec2125;
+}
+
+.service-title h5 {
+  font-size: clamp(1.5rem, 4.9vw, 2rem);
+    font-family: "Inter", Sans-serif;
+
+  letter-spacing: 1px;
+}
+
+.service-box {
+  height: 100%;
+}
+
+.service-box img {
+  width: 100%;
+  height: 300px;
+}
+
+.service-content {
+display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+flex-direction: column;
+height: 350px;
+  background-color: white;
+  padding: 26px 28px 28px;
+  margin: 0 auto;
+  border-bottom: 2px solid #16224a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-content h6 {
+  color: #16224a;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.service-content p {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(106, 114, 111);
+    font-family: " Inter, sans-serif";
+    text-align: start;
+}
+
+.service-content a {
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #ec2125;
+}
+
+.service-content a:hover {
+  color: #ec2125;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .service-content h6 {
+    font-size: 22px;
+  }
+  .service-content p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .service-content a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-content h6 {
+    font-size: 20px;
+  }
+  .service-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .service-content a {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .service-content h6 {
+    font-size: 18px;
+  }
+  .service-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .service-content a {
+    font-size: 16px;
+  }
+  .service-content{
+    height: 300px;
+  }
+}
+
+
+
+.about-us-content1 > span {
+  font-size: 18px;
+   font-family: "Outfit", Sans-serif;
+  line-height: 1.1em;
+  color: #ec2125;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+.customPrdouct .slick-arrow {
+    display: none !important;
+  }
+}
+
+
+.not-service{
+    color: white;
+    width: 100%;
+}
+
+.not-service>p{
+    text-align: center;
+}

@@ -1,0 +1,160 @@
+.services-section {
+  padding: 50px 0px;
+  position: relative;
+  height: 200px;
+  background-color: #f4f6fa;
+}
+
+.services-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  padding: 0 20px;
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 370px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  text-align: start;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card > span {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #16224a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.service-icon {
+  font-size: 34px;
+  color: #ed2024;
+}
+
+.service-titles {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #16224a;
+}
+
+.service-description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #6a726f;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width:1610px) {
+  .service-card{
+    width: 350px;
+  }
+  
+}
+@media (max-width:1530px) {
+  .service-card{
+    width: 330px;
+  }
+
+  .services-container{
+    gap: 10px;
+  }
+  
+}
+@media (max-width:1450px) {
+  .service-card{
+ 
+    width: 310px;
+  }
+  
+}
+@media (max-width:1310px) {
+ .service-card{
+ 
+    width: 380px;
+  }
+  .services-section{
+    height:400px;
+  }
+
+}
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .services-container {
+    top: -15%;
+    gap: 20px;
+  }
+}
+@media (max-width:992px) {
+  .services-container {
+   position: static;
+    gap: 20px;
+  }
+   .services-section{
+    height:fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .services-container {
+    position: relative;
+    top: 0;
+    padding: 0 ;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 90%;
+    padding: 10px 5px;
+  }
+
+  .service-card > span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-icon {
+    font-size: 28px;
+  }
+
+  .service-title {
+    font-size: 16px;
+  }
+
+  .service-description {
+    font-size: 14px;
+  }
+}
