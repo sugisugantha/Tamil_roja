@@ -21,7 +21,8 @@ const corsOptions = {
     "https://tamil-roja-frontend-tau.vercel.app",
     "https://tamil-roja-admin.vercel.app",
     "https://admin.tamilroja.in",
-    "https://tamilroja.in"
+    "https://tamilroja.in",
+    "https://www.tamilroja.in"
   ],
 
   methods: ["GET", "POST", "PUT", "DELETE"],
