@@ -19,7 +19,9 @@ const corsOptions = {
     "http://localhost:5173",
     "http://localhost:3000",
     "https://tamil-roja-frontend-tau.vercel.app",
-    "https://tamil-roja-admin.vercel.app"
+    "https://tamil-roja-admin.vercel.app",
+    "https://admin.tamilroja.in",
+    "https://tamilroja.in"
   ],
 
   methods: ["GET", "POST", "PUT", "DELETE"],
